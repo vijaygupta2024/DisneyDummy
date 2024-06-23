@@ -1,0 +1,699 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#body {
+    background-color: #0c111b;
+}
+
+
+/* NAVBAR PROPERTIES */
+
+nav {
+    background-color: #141a28;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 45px 10px 45px;
+    font-family: Calibri;
+    color: gainsboro;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.divleft,
+.divright {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#search input {
+    background-color: transparent;
+    color: gainsboro;
+    outline: none;
+    border: 0px;
+    border-bottom: 1px solid gainsboro;
+    margin-right: -30px;
+    font-size: 16px;
+    width: 250px;
+}
+
+#search input::placeholder {
+    color: gainsboro;
+    opacity: 0.8;
+}
+
+#search input:focus {
+    width: 350px;
+    border-bottom: 1px solid #1f80e0;
+}
+
+.search {
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+#search button {
+    background-color: transparent;
+    color: antiquewhite;
+    border: none;
+}
+
+#disney-logo img {
+    width: 120px;
+    height: 40px;
+    padding-bottom: 5px;
+}
+
+#subscribe {
+    border-radius: 5px;
+    background-color: #1f80e0;
+    color: gainsboro;
+    font-size: 14px;
+    font-family: Calibri;
+    padding: 3px 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#nav-kids {
+    font-family: cursive, 'lobster';
+    color: #ffaa05;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 3;
+}
+
+.dropdown-content a {
+    display: block;
+    color: whitesmoke;
+    background-color: #1a243a;
+    text-decoration: none;
+    padding: 4px 15px;
+    font-size: 16px;
+    font-family: calibri;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: white;
+}
+
+
+/* MAIN PAGE PROPERTIES */
+/* CAROUSEL */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.img-content {
+    width: 55%;
+    margin: auto;
+    border: 0px;
+    height: 100%;
+}
+
+.img-content img {
+    height: 100%;
+    width: 100%;
+}
+
+.text-content {
+    background-color: #030b17;
+    width: 45%;
+    margin: auto;
+    border: 0px;
+    height: 100%;
+    padding: 60px 150px 100px 60px;
+    font-family: Calibri;
+    font-weight: lighter;
+    line-height: 25px;
+    box-shadow: 50px 0px 10px 0px #030b17;
+    z-index: 1;
+}
+
+.cp1 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.cp2 {
+    color: rgb(216, 187, 187);
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cp3 {
+    color: gainsboro;
+    font-size: 16px;
+}
+
+/* FLEX CONTENT COMMON SECTION */
+.flex-section-heading {
+    color: aliceblue;
+    padding-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.flex-section {
+    padding-left: 50px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: space-between;
+}
+
+/* LATEST AND TRENDING SECTION */
+.latest {
+    border: 0px;
+    height: 240px;
+    width: 180px;
+    border-radius: 5px;
+    background-image: url("../DISNEY/IMAGES/STREE.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aquamarine;
+    padding-left: 10px;
+    font-family: calibri;
+}
+
+.stree {
+    margin-bottom: 0px;
+    display: none;
+}
+
+.latest:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.latest:hover .stree {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    margin-top: 130px;
+    padding-right: 5px;
+}
+
+.glow:hover {
+    border-radius: 3px;
+    background-color: rgba(167, 178, 231, 0.526);
+}
+
+#plus {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.lrg-txt1 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-size: 14px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.lrg-txt {
+    padding-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.lrg-txt img {
+    margin-right: 12px;
+}
+
+.sml-txt {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-size: 10px;
+    align-items: center;
+}
+
+.desc {
+    line-height: 12px;
+}
+
+/* SPORTS SECTION */
+.sports {
+    background-image: url("../DISNEY/IMAGES/INDBAN.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aquamarine;
+    border: 0px;
+    height: 140px;
+    width: 230px;
+    border-radius: 5px;
+    position: relative;
+    background-position: center;
+}
+
+.time {
+    text-align: right;
+    margin-right: 5px;
+    color: white;
+}
+
+.crckt-visible {
+    position: absolute;
+    margin-top: 35px;
+    padding-top: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(46, 26, 26, 0.575);
+    font-family: calibri;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 0px 0px 5px 5px;
+    line-height: 17px;
+    box-shadow: 0px -5px 5px 5px rgba(46, 26, 26, 0.575);
+}
+
+.crckt-visible img {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.crckt-hidden {
+    position: absolute;
+    border: 0px;
+    background-color: rgba(70, 22, 22, 0.397);
+    display: none;
+    flex-direction: column;
+    padding: 0px 10px;
+    margin-top: 45px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.top-txt img {
+    margin-right: 5px;
+}
+
+.top-txt {
+    font-size: 11px;
+    font-family: calibri;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.mdl-txt {
+    font-size: 9px;
+    font-family: calibri;
+    font-weight: bold;
+    margin-bottom: 3px;
+    line-height: 10px;
+}
+
+.btm-txt {
+    font-size: 12px;
+    font-family: calibri;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sports:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+    z-index: 5;
+}
+
+.sports:hover .crckt-hidden {
+    margin-top: 30px;
+    display: flex;
+    border: 0px;
+    background-color: rgba(20, 5, 5, 0.9);
+    flex-direction: column;
+    box-shadow: 0px -10px 10px 10px rgba(20, 5, 5, 0.9);
+}
+
+.sports:hover .crckt-visible {
+    display: none;
+}
+
+.btm-txt:hover {
+    background-color: #0f2443;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+/* KIDS SECTION */
+.kids {
+    border: 0px;
+    height: 240px;
+    width: 180px;
+    border-radius: 5px;
+    background-image: url("../DISNEY/IMAGES/VIR.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aquamarine;
+    font-family: calibri;
+}
+
+.vir {
+    border: 0px;
+    margin-bottom: 0px;
+    display: none;
+    padding-bottom: 5px;
+}
+
+.kids:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.kids:hover .vir {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    margin-top: 145px;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 0px 0px 5px 5px;
+    border: 0px;
+    background-color: #0f24438f;
+    box-shadow: 0px -5px 5px 5px #0f24438f;
+}
+
+.mdm-txt {
+    margin-top: 0px;
+    margin-bottom: 3px;
+    font-size: 12px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.sml-txt-vir {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    align-items: center;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+/* HOTSTAR SPECIALS SECTION */
+.htsp {
+    border: 0px;
+    border-radius: 5px;
+    height: 240px;
+    width: 180px;
+}
+
+#htsp1 {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    align-items: center;
+    padding-top: 85px;
+}
+
+#p1-hts {
+    color: whitesmoke;
+    margin-bottom: -20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#p2-hts {
+    color: goldenrod;
+    margin-top: 0px;
+    font-weight: lighter;
+    font-size: 32px;
+    font-family: cursive;
+}
+
+.htsp2 {
+    background-image: url("../DISNEY/IMAGES/CRIMINAL.webp");
+    text-align: center;
+    font-weight: bold;
+    color: aqua;
+    padding: 0px 10px;
+}
+
+.htsp2 img {
+    margin-right: 10px;
+}
+
+.p3-hts {
+    display: none;
+    margin-top: 210px;
+}
+
+.htsp2:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.htsp2:hover .p3-hts {
+    display: block;
+    border-radius: 5px;
+    font-size: small;
+    background-color: #0f2443de;
+}
+
+/* POPULAR GENRES SECTION */
+.popular {
+    border: 0px;
+    border-radius: 5px;
+    height: 120px;
+    width: 200px;
+    line-height: 120px;
+    align-items: center;
+    text-align: center;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#action {
+    background-image: url("../DISNEY/IMAGES/ACTION.webp");
+}
+
+#adventure {
+    background-image: url("../DISNEY/IMAGES/ADVENTURE.webp");
+}
+
+#biopic {
+    background-image: url("../DISNEY/IMAGES/BIOPIC.webp");
+}
+
+#science {
+    background-image: url("../DISNEY/IMAGES/SCIENCE.webp");
+}
+
+#horror {
+    background-image: url("../DISNEY/IMAGES/HORROR.webp");
+}
+
+#mythology {
+    background-image: url("../DISNEY/IMAGES/MYTHOLOGY.webp");
+}
+
+#travel {
+    background-image: url("../DISNEY/IMAGES/TRAVEL.webp");
+}
+
+.popular:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.genres {
+    background-color: #0f244350;
+    border-radius: 5px;
+}
+
+
+/* FOOTER CONTENT */
+footer {
+    margin-top: 75px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: calibri;
+    background-color: #141a28;
+}
+
+footer img {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+#social {
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#about {
+    width: 50%;
+}
+
+#about ul {
+    padding-left: 0px;
+}
+
+#about li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+#about p {
+    font-size: 14px;
+}
+
+.text {
+    margin-bottom: 2px;
+}
+
+#connect {
+    padding-left: 150px;
+}
+
+.connect-btn {
+    padding: 0px;
+    border-radius: 5px;
+    background-color: #0f2443;
+}
+
+.connect-btn:hover {
+    background-color: #3180cf;
+}
+
+#app-btn {
+    display: flex;
+}
+
+.app {
+    display: flex;
+    background-color: #0f2443;
+    border-radius: 5px;
+    align-items: center;
+    padding: 2px 15px;
+    margin-right: 5px;
+}
+
+.app:hover {
+    background-color: #3180cf;
+}
+
+.btn-text {
+    display: flex;
+    flex-direction: column;
+    gap: -10px;
+
+}
+
+.btn-text p {
+    margin: 0px;
+    color: rgb(186, 205, 208);
+    padding: 0px;
+    margin-bottom: -7px;
+}
+
+.img-btn {
+    padding: 0px;
+    border-radius: 5px;
+    background-color: transparent;
+    align-items: center;
+}
+
+.small-text {
+    font-size: 10px;
+    text-align: left;
+
+}
+
+.large-text {
+    font-size: 22px;
+    margin-top: 0px;
+}
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width:600px) {
+
+    #disney-logo,
+    #nav-tv,
+    #nav-sport,
+    #nav-disney,
+    #nav-kids,
+    #nav-movies,
+    #subscribe {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+    }
+
+    #about,
+    #social {
+        width: 100%;
+    }
+
+    #social {
+        gap: 30px;
+    }
+
+    #app-btn {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .cp3 {
+        display: none;
+    }
+
+    .content {
+        height: 200px;
+    }
+
+    .text-content {
+        padding: 0px;
+        padding-left: 10px;
+        margin-top: 40px;
+    }
+}
