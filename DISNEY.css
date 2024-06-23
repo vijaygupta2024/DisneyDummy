@@ -189,7 +189,7 @@ nav {
     height: 240px;
     width: 180px;
     border-radius: 5px;
-    background-image: url("../DISNEY/IMAGES/STREE.webp");
+    background-image: url("STREE.webp");
     background-repeat: no-repeat;
     background-size: cover;
     color: aquamarine;
@@ -261,7 +261,7 @@ nav {
 
 /* SPORTS SECTION */
 .sports {
-    background-image: url("../DISNEY/IMAGES/INDBAN.webp");
+    background-image: url("INDBAN.webp");
     background-repeat: no-repeat;
     background-size: cover;
     color: aquamarine;
@@ -369,7 +369,7 @@ nav {
     height: 240px;
     width: 180px;
     border-radius: 5px;
-    background-image: url("../DISNEY/IMAGES/VIR.webp");
+    background-image: url("VIR.webp");
     background-repeat: no-repeat;
     background-size: cover;
     color: aquamarine;
@@ -451,7 +451,7 @@ nav {
 }
 
 .htsp2 {
-    background-image: url("../DISNEY/IMAGES/CRIMINAL.webp");
+    background-image: url("CRIMINAL.webp");
     text-align: center;
     font-weight: bold;
     color: aqua;
@@ -497,31 +497,31 @@ nav {
 }
 
 #action {
-    background-image: url("../DISNEY/IMAGES/ACTION.webp");
+    background-image: url("ACTION.webp");
 }
 
 #adventure {
-    background-image: url("../DISNEY/IMAGES/ADVENTURE.webp");
+    background-image: url("ADVENTURE.webp");
 }
 
 #biopic {
-    background-image: url("../DISNEY/IMAGES/BIOPIC.webp");
+    background-image: url("BIOPIC.webp");
 }
 
 #science {
-    background-image: url("../DISNEY/IMAGES/SCIENCE.webp");
+    background-image: url("SCIENCE.webp");
 }
 
 #horror {
-    background-image: url("../DISNEY/IMAGES/HORROR.webp");
+    background-image: url("HORROR.webp");
 }
 
 #mythology {
-    background-image: url("../DISNEY/IMAGES/MYTHOLOGY.webp");
+    background-image: url("MYTHOLOGY.webp");
 }
 
 #travel {
-    background-image: url("../DISNEY/IMAGES/TRAVEL.webp");
+    background-image: url("TRAVEL.webp");
 }
 
 .popular:hover {
